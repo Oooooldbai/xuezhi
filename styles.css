@@ -106,75 +106,36 @@ body {
     padding: 20px;
 }
 
-/* 顶部导航样式 */
+/* 简化顶部导航样式 */
 .top-nav {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    height: var(--header-height);
-    background-color: var(--card-bg);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    margin-bottom: 20px;
+    padding: 0;
+    height: 50px; /* 更合适的高度 */
 }
 
 .left-nav {
+    height: 100%;
+    padding: 0 15px;
     display: flex;
     align-items: center;
-    margin-right: 20px;
 }
 
 .menu-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-    font-size: 20px;
-    color: var(--text-color);
-}
-
-.site-title {
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--primary-color);
-    text-decoration: none;
-    margin-right: 5px;
-}
-
-.dropdown-icon {
-    font-size: 10px;
-    color: var(--light-text);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .nav-links {
-    display: flex;
+    height: 100%;
 }
 
 .nav-links a {
+    height: 100%;
     padding: 0 15px;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s;
-    position: relative;
-    height: var(--header-height);
-    display: flex;
-    align-items: center;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--primary-color);
-}
-
-.nav-links a.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    right: 15px;
-    height: 2px;
-    background-color: var(--primary-color);
 }
 .user-area .btn {
     display: none;
