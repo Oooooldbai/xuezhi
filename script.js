@@ -16,10 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
-
+    
     // 注释掉响应式侧边栏开关代码，防止自动添加按钮
     /*
-    // 响应式侧边栏开关
     const toggleSidebar = document.createElement('button');
     toggleSidebar.className = 'toggle-sidebar';
     toggleSidebar.innerHTML = '☰';
@@ -113,4 +112,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('查看新闻:', title);
         });
     });
+    
+    // 删除菜单按钮相关代码
 });
