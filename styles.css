@@ -133,25 +133,7 @@ body {
 }
 
 .user-area .btn {
-    padding: 6px 15px;
-    border-radius: var(--border-radius);
-    background: transparent;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s;
-    margin-left: 10px;
-    border: 1px solid var(--border-color);
-}
-
-.user-area .btn.primary {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-}
-
-.user-area .btn:hover {
-    opacity: 0.9;
+    display: none;
 }
 
 /* 网站标题和搜索区 */
@@ -160,39 +142,43 @@ body {
     margin: 40px 0;
 }
 
-.logo-large {
-    width: 80px;
-    height: 80px;
+.hero-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
 }
 
+.logo-large {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
 .hero h1 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 36px;
     color: var(--primary-color);
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .tagline {
-    font-size: 16px;
     color: var(--light-text);
+    font-size: 16px;
 }
 
-/* 搜索区域 */
 .search-container {
     display: flex;
     max-width: 600px;
-    margin: 0 auto 30px;
+    margin: 20px auto;
 }
 
 .search-input {
     flex: 1;
-    padding: 12px 15px;
+    padding: 12px 20px;
     border: 2px solid var(--border-color);
-    border-right: none;
     border-radius: var(--border-radius) 0 0 var(--border-radius);
-    font-size: 14px;
-    transition: border-color 0.3s;
+    font-size: 16px;
+    transition: all 0.3s;
 }
 
 .search-input:focus {
@@ -201,13 +187,14 @@ body {
 }
 
 .search-btn {
-    padding: 0 20px;
     background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    padding: 0 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 18px;
+    transition: all 0.3s;
 }
 
 .search-btn:hover {
@@ -219,17 +206,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .tab {
     padding: 8px 15px;
     background-color: var(--card-bg);
+    border-radius: var(--border-radius);
     color: var(--text-color);
     text-decoration: none;
-    border-radius: var(--border-radius);
     font-size: 14px;
     transition: all 0.3s;
+    box-shadow: var(--shadow);
 }
 
 .tab.active,
@@ -241,23 +229,28 @@ body {
 /* 搜索引擎选择 */
 .search-engines {
     display: flex;
-    margin-bottom: 30px;
+    margin: 20px 0 30px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .engine {
-    padding: 6px 15px;
-    color: var(--light-text);
+    padding: 8px 15px;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 14px;
-    border-right: 1px solid var(--border-color);
+    transition: all 0.3s;
+    position: relative;
 }
 
-.engine:first-child {
-    padding-left: 0;
-}
-
-.engine:last-child {
-    border-right: none;
+.engine.active::after,
+.engine:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
 }
 
 .engine.active,
@@ -268,7 +261,7 @@ body {
 /* 资源卡片样式 */
 .resource-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     margin-bottom: 40px;
 }
@@ -278,8 +271,8 @@ body {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .resource-card:hover {
@@ -296,13 +289,14 @@ body {
 .resource-icon {
     width: 40px;
     height: 40px;
-    margin-right: 15px;
+    margin-right: 10px;
     border-radius: 8px;
 }
 
 .resource-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
+    color: var(--text-color);
 }
 
 .resource-desc {
