@@ -428,3 +428,8 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
+
+/* 添加这个来隐藏所有菜单按钮 */
+.menu-toggle, .toggle-sidebar {
+    display: none !important;
+}
