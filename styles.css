@@ -106,39 +106,49 @@ body {
     padding: 20px;
 }
 
-/* 简化顶部导航样式 */
+/* 顶部导航样式 */
 .top-nav {
-    padding: 0;
-    height: 50px; /* 更合适的高度 */
-}
-
-.left-nav {
-    height: 100%;
-    padding: 0 15px;
     display: flex;
     align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
 }
 
-.menu-toggle {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
+/* 显示导航链接 */
 .nav-links {
+    display: flex;
     height: 100%;
 }
 
 .nav-links a {
     height: 100%;
     padding: 0 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
-.user-area .btn {
-    display: none;
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+/* 可以保留高亮样式，但不一定需要下划线 */
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 2px;
+    background-color: var(--primary-color);
 }
 
 /* 网站标题和搜索区 */
