@@ -19,24 +19,10 @@
                 <ul>
                     <li class="active"><a href="#"><span class="icon">📚</span>学科资源</a></li>
                     <li><a href="#"><span class="icon">📝</span>考试备考</a></li>
-                    <li><a href="#"><span class="icon">🧩</span>思维训练</a>
-                        <ul class="submenu">
-                            <li><a href="#">逻辑思维</a></li>
-                            <li><a href="#">创造思维</a></li>
-                            <li><a href="#">数学思维</a></li>
-                            <li><a href="#">科学思维</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#"><span class="icon">🧩</span>思维训练</a></li>
                     <li><a href="#"><span class="icon">🎯</span>学习方法</a></li>
                     <li><a href="#"><span class="icon">🏆</span>竞赛资源</a></li>
-                    <li><a href="#"><span class="icon">🌟</span>素质教育</a>
-                        <ul class="submenu">
-                            <li><a href="#">艺术教育</a></li>
-                            <li><a href="#">体育教育</a></li>
-                            <li><a href="#">劳动教育</a></li>
-                            <li><a href="#">科技教育</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#"><span class="icon">🌟</span>素质教育</a></li>
                     <li><a href="#"><span class="icon">👪</span>家庭教育</a></li>
                     <li><a href="#"><span class="icon">🔍</span>资源搜索</a></li>
                     <li><a href="#"><span class="icon">📱</span>教育应用</a></li>
@@ -60,18 +46,9 @@
                     <a href="about.html">关于我们</a>
                 </div>
                 <div class="user-area">
-                    <!-- 留空，移除按钮 -->
+                    <!-- 用户区域内容已移除 -->
                 </div>
             </header>
-
-            <!-- 网站logo和标语 -->
-            <div class="hero">
-                <div class="hero-title">
-                    <img src="logo.svg" alt="学知集" class="logo-large">
-                    <h1>学知集</h1>
-                </div>
-                <p class="tagline">聚焦K12优质教育资源，让学习更高效</p>
-            </div>
 
             <!-- 搜索栏 -->
             <div class="search-container">
@@ -79,7 +56,15 @@
                 <button class="search-btn">🔍</button>
             </div>
 
-            <!-- 分类标签 -->
+            <!-- 资源分类标题 -->
+            <div class="category-header">
+                <h2 class="category-title">学科资源</h2>
+                <div class="category-actions">
+                    <a href="#" class="more-link">所有资源分类工具 >></a>
+                </div>
+            </div>
+
+            <!-- 分类标签 - 改为水平选项卡 -->
             <div class="category-tabs">
                 <a href="#" class="tab active">常用</a>
                 <a href="#" class="tab">小学</a>
@@ -89,93 +74,168 @@
                 <a href="#" class="tab">亲子教育</a>
             </div>
 
-            <!-- 搜索引擎选择 -->
-            <div class="search-engines">
-                <a href="#" class="engine active">站内</a>
-                <a href="#" class="engine">百度</a>
-                <a href="#" class="engine">知乎</a>
-                <a href="#" class="engine">B站</a>
-                <a href="#" class="engine">小红书</a>
+            <!-- 资源卡片网格 - 使用与AI工具导航相似的布局 -->
+            <div class="resource-grid">
+                <!-- 数学思维训练 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #6c5ce7;">
+                        <span>学</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">数学思维训练</h3>
+                        <p class="resource-desc">专注小学生数学思维培养，提供系统化的思维训练方法与习题</p>
+                    </div>
+                </div>
+
+                <!-- 阅读理解宝典 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #74b9ff;">
+                        <span>学</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">阅读理解宝典</h3>
+                        <p class="resource-desc">中学语文阅读理解解题技巧，名师授课，提高阅读理解能力</p>
+                    </div>
+                </div>
+
+                <!-- 科学实验室 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #00b894;">
+                        <span>学</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">科学实验室</h3>
+                        <p class="resource-desc">趣味科学实验视频合集，激发孩子探索世界的好奇心</p>
+                    </div>
+                </div>
+
+                <!-- 家长说 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #e84393;">
+                        <span>学</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">家长说</h3>
+                        <p class="resource-desc">知名教育专家分享家庭教育方法，解决家长常见教育困惑</p>
+                    </div>
+                </div>
+
+                <!-- 英语听说训练营 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #fdcb6e;">
+                        <span>学</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">英语听说训练营</h3>
+                        <p class="resource-desc">针对中小学生的英语听说能力提升课程，情境对话练习</p>
+                    </div>
+                </div>
+
+                <!-- 中考备考指南 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #0984e3;">
+                        <span>学</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">中考备考指南</h3>
+                        <p class="resource-desc">全学科中考复习策略与技巧，重点难点突破，名师指导</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第二个资源分类 -->
+            <div class="category-header">
+                <h2 class="category-title">思维训练</h2>
+                <div class="category-actions">
+                    <a href="#" class="more-link">所有思维训练资源 >></a>
+                </div>
+            </div>
+            
+            <div class="resource-grid">
+                <!-- 逻辑思维训练 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #6c5ce7;">
+                        <span>思</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">逻辑思维训练</h3>
+                        <p class="resource-desc">针对3-12岁儿童的逻辑思维培养课程，提高分析和推理能力</p>
+                    </div>
+                </div>
+                
+                <!-- 创造性思维 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #74b9ff;">
+                        <span>思</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">创造性思维</h3>
+                        <p class="resource-desc">培养孩子的创新思维和问题解决能力，丰富的创意活动和案例</p>
+                    </div>
+                </div>
+                
+                <!-- 数学思维挑战 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #00b894;">
+                        <span>思</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">数学思维挑战</h3>
+                        <p class="resource-desc">数学奥林匹克训练题集，培养学生的数学思维和解题能力</p>
+                    </div>
+                </div>
+                
+                <!-- 科学思维实验 -->
+                <div class="resource-card">
+                    <div class="resource-icon" style="background-color: #e84393;">
+                        <span>思</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3 class="resource-title">科学思维实验</h3>
+                        <p class="resource-desc">通过有趣的科学实验培养孩子的科学思维和探索精神</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- 资源卡片展示区 -->
+            <!-- 第三个资源分类 -->
+            <div class="category-header">
+                <h2 class="category-title">考试备考</h2>
+                <div class="category-actions">
+                    <a href="#" class="more-link">所有考试备考资源 >></a>
+                </div>
+            </div>
+            
             <div class="resource-grid">
-                <!-- 资源卡片示例 -->
+                <!-- 中考全科复习 -->
                 <div class="resource-card">
-                    <div class="card-header">
-                        <img src="logo.svg" alt="数学思维训练" class="resource-icon">
-                        <h3 class="resource-title">数学思维训练</h3>
+                    <div class="resource-icon" style="background-color: #6c5ce7;">
+                        <span>考</span>
                     </div>
-                    <p class="resource-desc">专注小学生数学思维培养，提供系统化的思维训练方法与习题</p>
-                    <div class="resource-meta">
-                        <span class="tag">小学</span>
-                        <span class="tag">数学</span>
-                        <span class="tag">思维训练</span>
+                    <div class="resource-info">
+                        <h3 class="resource-title">中考全科复习</h3>
+                        <p class="resource-desc">中考各学科复习要点、考点分析及模拟试题，助力中考备考</p>
                     </div>
                 </div>
-
+                
+                <!-- 高考冲刺 -->
                 <div class="resource-card">
-                    <div class="card-header">
-                        <img src="logo.svg" alt="阅读理解宝典" class="resource-icon">
-                        <h3 class="resource-title">阅读理解宝典</h3>
+                    <div class="resource-icon" style="background-color: #74b9ff;">
+                        <span>考</span>
                     </div>
-                    <p class="resource-desc">中学语文阅读理解解题技巧，名师授课，提高阅读理解能力</p>
-                    <div class="resource-meta">
-                        <span class="tag">初中</span>
-                        <span class="tag">语文</span>
-                        <span class="tag">阅读技巧</span>
+                    <div class="resource-info">
+                        <h3 class="resource-title">高考冲刺资料库</h3>
+                        <p class="resource-desc">高考重点科目复习资料、历年真题解析及考前冲刺指导</p>
                     </div>
                 </div>
-
+                
+                <!-- 小升初备考 -->
                 <div class="resource-card">
-                    <div class="card-header">
-                        <img src="logo.svg" alt="科学实验室" class="resource-icon">
-                        <h3 class="resource-title">科学实验室</h3>
+                    <div class="resource-icon" style="background-color: #00b894;">
+                        <span>考</span>
                     </div>
-                    <p class="resource-desc">趣味科学实验视频合集，激发孩子探索世界的好奇心</p>
-                    <div class="resource-meta">
-                        <span class="tag">通用</span>
-                        <span class="tag">科学</span>
-                        <span class="tag">实验</span>
-                    </div>
-                </div>
-
-                <div class="resource-card">
-                    <div class="card-header">
-                        <img src="logo.svg" alt="家长说" class="resource-icon">
-                        <h3 class="resource-title">家长说</h3>
-                    </div>
-                    <p class="resource-desc">知名教育专家分享家庭教育方法，解决家长常见教育困惑</p>
-                    <div class="resource-meta">
-                        <span class="tag">家庭教育</span>
-                        <span class="tag">亲子关系</span>
-                        <span class="tag">专家讲座</span>
-                    </div>
-                </div>
-
-                <div class="resource-card">
-                    <div class="card-header">
-                        <img src="logo.svg" alt="英语听说训练营" class="resource-icon">
-                        <h3 class="resource-title">英语听说训练营</h3>
-                    </div>
-                    <p class="resource-desc">针对中小学生的英语听说能力提升课程，情境对话练习</p>
-                    <div class="resource-meta">
-                        <span class="tag">英语</span>
-                        <span class="tag">听说训练</span>
-                        <span class="tag">情境教学</span>
-                    </div>
-                </div>
-
-                <div class="resource-card">
-                    <div class="card-header">
-                        <img src="logo.svg" alt="中考备考指南" class="resource-icon">
-                        <h3 class="resource-title">中考备考指南</h3>
-                    </div>
-                    <p class="resource-desc">全学科中考复习策略与技巧，重点难点突破，名师指导</p>
-                    <div class="resource-meta">
-                        <span class="tag">初中</span>
-                        <span class="tag">中考</span>
-                        <span class="tag">复习指南</span>
+                    <div class="resource-info">
+                        <h3 class="resource-title">小升初备考指南</h3>
+                        <p class="resource-desc">小学毕业升学考试复习指南、重点难点突破及面试技巧</p>
                     </div>
                 </div>
             </div>
